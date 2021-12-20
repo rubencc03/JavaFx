@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="373.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Cntr2">
+   <children>
+      <Label layoutX="27.0" layoutY="14.0" prefHeight="39.0" prefWidth="150.0" text="FAST BURGER">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Label>
+      <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="171.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../burger1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="41.0" layoutY="61.0" text="BEGUDES" />
+      <Label layoutX="150.0" layoutY="243.0" text="1€">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <Label layoutX="152.0" layoutY="122.0" prefHeight="60.0" prefWidth="51.0" text="2€">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <ImageView fx:id="aguaimg" fitHeight="120.0" fitWidth="102.0" layoutX="24.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../botella.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cocaimg" fitHeight="97.0" fitWidth="104.0" layoutX="14.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../coca.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>
