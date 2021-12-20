@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.paint.Color?>
+
+<!-- Lo que ocurre en el FlowPane es que los cosas se ajustan horizontalmente  para ocupar el 100% del espacio -->
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16">
+   <children>
+      <FlowPane layoutY="-6.0" prefHeight="345.0" prefWidth="473.0">
+         <children>
+            <Button mnemonicParsing="false" text="Botón1" />
+            <ColorPicker>
+               <value>
+                  <Color red="1.0" />
+               </value>
+            </ColorPicker>
+            <CheckBox mnemonicParsing="false" text="Marca aquñí" />
+            <ChoiceBox prefWidth="150.0" />
+            <MenuButton mnemonicParsing="false" text="MenuButton">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <ProgressBar prefWidth="200.0" progress="0.0" />
+            <ComboBox prefWidth="150.0" />
+            <RadioButton mnemonicParsing="false" text="RadioButton" />
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>

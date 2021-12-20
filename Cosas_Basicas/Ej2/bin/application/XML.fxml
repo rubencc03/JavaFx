@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="350.0">
+         <children>
+            <CheckBox layoutX="14.0" layoutY="28.0" mnemonicParsing="false" text="PEPE" />
+            <CheckBox layoutX="14.0" layoutY="72.0" mnemonicParsing="false" text="PSOE" />
+            <CheckBox layoutX="14.0" layoutY="109.0" mnemonicParsing="false" text="CIUDADANOS" />
+            <CheckBox layoutX="14.0" layoutY="148.0" mnemonicParsing="false" text="VOX" />
+            <CheckBox layoutX="14.0" layoutY="192.0" mnemonicParsing="false" text="ANIMALISTAS" />
+            <ImageView fitHeight="77.0" fitWidth="104.0" layoutX="232.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../espanya.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../flecha.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="126.0" fitWidth="121.0" layoutX="223.0" layoutY="465.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../v.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

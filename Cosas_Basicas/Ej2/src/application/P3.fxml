@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="350.0" style="-fx-background-color: white" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="-237.0" layoutY="-187.0" prefHeight="299.0" prefWidth="228.0" />
+      <ImageView fitHeight="293.0" fitWidth="362.0" layoutX="-9.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../grafico.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="50.0" layoutY="314.0" text="PSOE" />
+      <Label layoutX="108.0" layoutY="314.0" text="PEPE" />
+      <Label layoutX="148.0" layoutY="314.0" prefHeight="17.0" prefWidth="69.0" text="CIUDADANOS">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="228.0" layoutY="314.0" text="VOX" />
+      <Label layoutX="261.0" layoutY="314.0" text="ANIMALISTAS" />
+      <Label layoutX="14.0" layoutY="569.0" text="Y recuerda,da igual el político que gane,el pueblo nunca gana" />
+   </children>
+   <effect>
+      <ColorAdjust />
+   </effect>
+</AnchorPane>
