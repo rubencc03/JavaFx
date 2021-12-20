@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?language javascript?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Alert?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.collections.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" 
+prefHeight="136.0" prefWidth="405.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Cntr1">
+   <children>
+      <Label fx:id="labelU" layoutX="24.0" layoutY="51.0" text="Username" />
+      <Label  fx:id="LabelP" layoutX="24.0" layoutY="91.0" text="Password" />
+      <TextField fx:id="usu" layoutX="104.0" layoutY="47.0" />
+      <PasswordField fx:id="password" layoutX="104.0" layoutY="87.0" />
+      <Button fx:id="button1" layoutX="333.0" layoutY="99.0" mnemonicParsing="false" text="Next" />
+      <ComboBox fx:id="combo" layoutX="276.0" layoutY="13.0" prefHeight="25.0" prefWidth="98.0" promptText="Idioma"  onAction="idioma()" >
+      	<items>
+        	<FXCollections fx:factory="observableArrayList">
+          		<String fx:value="Español" />
+          		<String fx:value="Ingles" />
+          		<String fx:value="Valenciano" />
+        	</FXCollections>
+      	</items>
+      </ComboBox>
+       <fx:script>
+		 function idioma() {
+			  
+        
+		 
+		 if(combo.getValue().toString().equals("Español")){
+		 	labelU.setText("Usuario")
+		 	LabelP.setText("Contraseña")
+		 	button1.setText("Siguiente")
+		 } else  if(combo.getValue().toString().equals("Ingles")){
+			 labelU.setText("User")
+		 	LabelP.setText("Password")
+		 	button1l.setText("Next")
+		 }else  if(combo.getValue().toString().equals("Valenciano")){
+			 labelU.setText("Usuari")
+		 	LabelP.setText("Contrasenya")
+		 	button1l.setText("Seguent")
+		 }
+ 		
+ 			
+
+ 			
+ 		}
+ </fx:script>
+   </children>
+   
+
+ 
+</AnchorPane>
+
