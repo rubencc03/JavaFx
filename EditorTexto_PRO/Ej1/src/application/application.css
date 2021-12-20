@@ -1,0 +1,17 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.anchor {
+    -fx-background-image:url('file:/C:/Users/ruben/Desktop/UD6EJ1/Ej1/imgFondo.jpg');
+    -fx-background-color: blue;
+}
+
+.text{
+	
+	    -fx-background-color: white;
+		-fx-border-color: black;
+		    -fx-border-radius: 18 18 18 18;
+		    -fx-background-radius: 18 18 18 18;
+
+		    
+		
+}

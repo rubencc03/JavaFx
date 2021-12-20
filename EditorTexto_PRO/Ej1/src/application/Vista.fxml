@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="551.0" prefWidth="832.0" styleClass="anchor" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Cntr1">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="800.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Archivo">
+            <items>
+              <MenuItem fx:id="menuNuevoArchivo" mnemonicParsing="false" onAction="#newDocumentEvent" style="-fx-graphic: url('file:imgNuev.png');" text="Nuevo" />
+              <MenuItem fx:id="menuAbrir" mnemonicParsing="false" onAction="#abrirDocumentoEvent" style="-fx-graphic: url('file:imgOpen.png');" text="Abrir" />
+              <MenuItem fx:id="menuGuardar" mnemonicParsing="false" onAction="#guardarDocEvent" style="-fx-graphic: url('file:imgsave.png');" text="Guardar" />
+                  <MenuItem fx:id="menuGuardarComo" mnemonicParsing="false" onAction="#guardarComoEvent" style="-fx-graphic: url('file:imgsave.png');" text="guardar Como" />
+                  <MenuItem fx:id="menuSalir" mnemonicParsing="false" onAction="#salirProgramaEvent" style="-fx-graphic: url('file:imgExit.png');" text="Salir" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Editar">
+            <items>
+            	<MenuItem fx:id="menuCortar" disable="true" mnemonicParsing="false" onAction="#cortarTextoEvent" style="-fx-graphic: url('file:imgCortar.png');" text="Cortar" />	
+              	<MenuItem fx:id="menuCopiar" disable="true" mnemonicParsing="false" onAction="#copiarTextoEvent" style="-fx-graphic: url('file:imgCopy.png');" text="Copiar" />
+                 <MenuItem fx:id="menuPegar" mnemonicParsing="false" onAction="#pegarTextoEvent" style="-fx-graphic: url('file:imgPegar.png');" text="Pegar" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem fx:id="Help" mnemonicParsing="false" onAction="#acercaDe" style="-fx-graphic: url('file:imgHelp.png');" text="acerca de" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ToolBar layoutY="25.0" prefHeight="38.0" prefWidth="800">
+        <items>
+          <Button fx:id="btnNuevo" accessibleHelp="Nuevo" mnemonicParsing="false" onAction="#newDocumentEvent" prefHeight="20.0" prefWidth="26.0" style="-fx-background-image: url('file:imgNuev.png'); -fx-background-repeat: no-repeat; -fx-background-position:center; "><tooltip><Tooltip text="Nuevo" /></tooltip></Button>
+            <Button fx:id="btnAbrir" mnemonicParsing="false" onAction="#abrirDocumentoEvent" prefHeight="25.0" prefWidth="28.0" style="-fx-background-image: url('file:imgOpen.png'); -fx-background-repeat: no-repeat; -fx-background-position:center; "><tooltip><Tooltip text="Abrir" /></tooltip></Button>
+            <Button fx:id="btnGuardar" mnemonicParsing="false" onAction="#guardarDocEvent" prefHeight="25.0" prefWidth="28.0" style="-fx-background-image: url('file:imgsave.png'); -fx-background-repeat: no-repeat; -fx-background-position:center; "><tooltip><Tooltip text="Guardar" /></tooltip></Button>
+            <Button fx:id="btnCopiar" disable="true" mnemonicParsing="false" onAction="#copiarTextoEvent" prefHeight="25.0" prefWidth="28.0" style="-fx-background-image: url('file:imgCopy.png'); -fx-background-repeat: no-repeat; -fx-background-position:center; "><tooltip><Tooltip text="Copiar" /></tooltip></Button>
+            <Button fx:id="btnPegar" mnemonicParsing="false" onAction="#pegarTextoEvent" prefHeight="25.0" prefWidth="28.0" style="-fx-background-image: url('file:imgPegar.png'); -fx-background-repeat: no-repeat; -fx-background-position:center; "><tooltip><Tooltip text="Pegar" /></tooltip></Button>
+            <Button fx:id="btnCortar" disable="true" mnemonicParsing="false" onAction="#cortarTextoEvent" prefHeight="25.0" prefWidth="28.0" style="-fx-background-image: url('file:imgCortar.png'); -fx-background-repeat: no-repeat; -fx-background-position:center; "><tooltip><Tooltip text="Cortar" /></tooltip></Button>
+            <Button fx:id="btnSalir" mnemonicParsing="false" onAction="#salirProgramaEvent" prefHeight="25.0" prefWidth="28.0" style="-fx-background-image: url('file:imgExit.png'); -fx-background-repeat: no-repeat; -fx-background-position:center;  "><tooltip><Tooltip text="Salir" /></tooltip></Button>
+        </items>
+      </ToolBar>
+      <TextArea fx:id="textoTA" layoutX="15.0" layoutY="78.0" onMouseMoved="#habilitarBtns" prefHeight="400" prefWidth="770.0" />
+      <ImageView fx:id="hayQueGuardar" fitHeight="16.0" fitWidth="16.0" layoutX="263.0" layoutY="497.0" pickOnBounds="true" preserveRatio="true" visible="true">
+         <image>
+            <Image url="@../../imgsave.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nombreArchivo" layoutX="15.0" layoutY="486.0" prefHeight="38.0" prefWidth="192.0" styleClass="text" text="TheBigDocument">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
